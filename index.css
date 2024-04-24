@@ -1,0 +1,219 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0;
+}
+
+div#principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: rgb(102, 221, 136);
+  gap: 1rem;
+  margin-top: 3rem;
+  border: #720c94 solid 2px;
+  padding-bottom: 0.5rem;
+}
+#nombre{
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0;
+}
+form#form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+label, input, button{
+  font-size: x-small;
+  border-radius: 4px;
+}
+
+ul#list{
+  align-items: center;
+  height: 20rem;
+  overflow-y: scroll;
+  width: 95%;
+  padding: 0;
+  border-radius: 1rem;
+  background-color: rgb(194, 254, 202);
+  border: #720c94 solid 1px;
+}
+
+#list::-webkit-scrollbar{
+  width: 6px;
+}
+#list::-webkit-scrollbar-thumb{
+  background-color:#720c94;
+  border-radius: 4px;
+}
+p{
+  padding: 0.3rem;
+  font-size: small;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #720c94;
+
+}
+
+.info {
+  display: none;
+}
+
+button#form-btn{
+  background-color: rgb(137, 3, 195);
+  border-radius: 2rem;
+  color: aliceblue;
+}
+button#form-btn:hover{
+  background-color: rgb(192, 73, 243);
+  cursor: pointer;
+  border-radius: 2rem;
+}
+button.edit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: #720c94;
+  background-color: rgb(194, 254, 202);
+}
+
+button.edit-btn:hover{
+  width: 1.8rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: rgb(3, 248, 24);
+  background-color: #720c94;
+  border-radius: 1.5rem;
+}
+button.delete-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: rgb(251, 2, 2);
+  background-color: rgb(194, 254, 202);
+  border-radius: 2rem;
+}
+
+button.delete-btn:hover{
+  width: 1.8rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: rgb(194, 254, 202);
+  background-color: red;
+}
+
+
+.form-input {
+  outline: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.sombreado{
+  outline: inset;
+  border-radius: 3px;
+}
+.correct, .correct:focus {
+  outline: 2px solid rgb(1, 237, 1);
+  border-radius: 2px;
+}
+
+.incorrect, .incorrect:focus {
+  outline: 2px solid red;
+  border-radius: 2px;
+}
+
+.show {
+  display: flex;
+}
+@media (min-width: 425px){
+    
+  #nombre{
+    font-size: 1.8;
+  }
+
+  p{
+    font-size: medium;
+  }
+
+  label, input, button{
+    font-size: small;
+  }
+
+  button.delete-btn, button.edit-btn, button.edit-btn:hover, button.delete-btn:hover {
+    width: 2.3rem;
+    height: 1.6rem;
+  }
+}
+
+@media (min-width: 768px){
+  
+  #nombre{
+    font-size: 2.3rem;
+  }
+
+  div#principal{
+    width: 70%;
+  }
+
+  button.delete-btn, button.edit-btn, button.edit-btn:hover, button.delete-btn:hover {
+    width: 2.8rem;
+    height: 2rem;
+  }
+
+}
+
+@media (min-width: 1024px){
+  
+  #nombre{
+    font-size: 2.6rem;
+  }
+
+  div#principal{
+    width: 60%;
+  }
+
+  p{
+    font-size: x-large;
+  }
+
+  label, input, button{
+    font-size: large;
+  }
+
+  button.edit-btn, button.delete-btn, button.edit-btn:hover, button.delete-btn:hover {
+    width: 3.8rem;
+    height: 2.8rem;
+  }
+
+}
