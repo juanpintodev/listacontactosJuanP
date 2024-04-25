@@ -79,6 +79,10 @@ p{
 
 .info {
   display: none;
+  font-size: xx-small;
+  color: red;
+  margin: 0;
+  padding: 10px;
 }
 
 button#form-btn{
@@ -190,6 +194,10 @@ button.delete-btn:hover{
     width: 2.8rem;
     height: 2rem;
   }
+  
+  .info {
+    font-size: x-small;
+  }
 
 }
 
@@ -215,5 +223,7 @@ button.delete-btn:hover{
     width: 3.8rem;
     height: 2.8rem;
   }
-
+  .info {
+    font-size: small;
+  }
 }
