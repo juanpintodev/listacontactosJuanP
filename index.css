@@ -28,9 +28,9 @@ div#principal{
   border: #720c94 solid 2px;
   height: 75%;
 }
-#nombre{
-  font-size: 1.5rem;
-  padding: 2rem 0 0 0;
+p#nombre{
+  font-size: 1rem;
+  padding: 1.5rem 0 0 0;
   margin: 0;
 }
 form#form{
@@ -70,7 +70,7 @@ ul#list{
 }
 p{
   padding: 0.3rem;
-  font-size: small;
+  font-size: x-small;
 }
 
 .contact{
@@ -78,7 +78,6 @@ p{
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px #720c94;
-
 }
 
 .info {
@@ -167,8 +166,8 @@ button.delete-btn:hover{
 }
 @media (min-width: 425px){
     
-  #nombre{
-    font-size: 1.8;
+  p#nombre{
+    font-size: 1.5rem;
   }
 
   p{
@@ -186,9 +185,9 @@ button.delete-btn:hover{
 }
 
 @media (min-width: 768px){
-  
-  #nombre{
-    font-size: 2.3rem;
+
+  p#nombre{
+    font-size: 1.7rem;
   }
 
   div#principal{
@@ -208,8 +207,8 @@ button.delete-btn:hover{
 
 @media (min-width: 1024px){
   
-  #nombre{
-    font-size: 2.3rem;
+  p#nombre{
+    font-size: 2rem;
   }
 
   div#principal{
@@ -225,8 +224,8 @@ button.delete-btn:hover{
   }
 
   button.edit-btn, button.delete-btn, button.edit-btn:hover, button.delete-btn:hover {
-    width: 3.5rem;
-    height: 2.3rem;
+    width: 3.2rem;
+    height: 2.1rem;
   }
   .info {
     font-size: small;
