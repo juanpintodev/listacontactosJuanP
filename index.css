@@ -196,8 +196,8 @@ button.delete-btn:hover{
   }
 
   button.delete-btn, button.edit-btn, button.edit-btn:hover, button.delete-btn:hover {
-    width: 2.8rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 1.8rem;
   }
   
   .info {
@@ -209,7 +209,7 @@ button.delete-btn:hover{
 @media (min-width: 1024px){
   
   #nombre{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   div#principal{
@@ -217,7 +217,7 @@ button.delete-btn:hover{
   }
 
   p{
-    font-size: x-large;
+    font-size: large;
   }
 
   label, input, button{
@@ -225,10 +225,11 @@ button.delete-btn:hover{
   }
 
   button.edit-btn, button.delete-btn, button.edit-btn:hover, button.delete-btn:hover {
-    width: 3.8rem;
-    height: 2.8rem;
+    width: 3.5rem;
+    height: 2.3rem;
   }
   .info {
     font-size: small;
+    gap: 0;
   }
 }
