@@ -97,6 +97,9 @@ form.addEventListener('submit', e => {
   formBtn.disabled = true;
   nameInput.classList.remove('correct');
   numberInput.classList.remove('correct');
+  if(nameInput === '' || numberInput === ''){
+    formBtn.disabled = true;
+  }
 });
 
 
