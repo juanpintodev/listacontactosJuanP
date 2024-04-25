@@ -9,29 +9,28 @@
 body{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 0.5rem;
   width: 100%;
   margin: 0;
+  height: 100vh;
 }
 
 div#principal{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
   border-radius: 2rem;
   background-color: rgb(102, 221, 136);
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: 3rem;
   border: #720c94 solid 2px;
-  padding-bottom: 0.5rem;
+  height: 75%;
 }
 #nombre{
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 2rem 0 0 0;
   margin: 0;
 }
 form#form{
@@ -39,7 +38,11 @@ form#form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  border: #720c94 solid 1px;
+  border-radius: 0.5rem;
+  background-color: rgb(194, 254, 202);
+  padding: 10px;
 }
 label, input, button{
   font-size: x-small;
@@ -55,6 +58,7 @@ ul#list{
   border-radius: 1rem;
   background-color: rgb(194, 254, 202);
   border: #720c94 solid 1px;
+  height: 100%;
 }
 
 #list::-webkit-scrollbar{
@@ -82,7 +86,8 @@ p{
   font-size: xx-small;
   color: red;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
+  
 }
 
 button#form-btn{
