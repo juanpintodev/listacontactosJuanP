@@ -124,20 +124,22 @@ list.addEventListener('click', e => {
     const li = editBtn.parentElement;
     const nameEdit = li.children[1];
     const numberEdit = li.children[2];
-    
+      
       nameEdit.addEventListener('input', e =>{
       nameValidation = NAME_REGEX.test(nameEdit.innerHTML);
       validateInput(nameEdit, nameValidation);
       });
-
+      
+      
       numberEdit.addEventListener('input', e =>{ 
       numberValidation = NUMBER_REGEX.test(numberEdit.innerHTML);
       validateInput(numberEdit, numberValidation);
       });
+      
 
       if (li.classList.contains('editando')) {
 
-      if(!nameValidation || !numberValidation){
+      if(!nameValidation && !numberValidation){
         return
       }
 
