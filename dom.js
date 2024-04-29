@@ -127,9 +127,6 @@ list.addEventListener('click', e => {
     const nameEdit = li.children[1];
     const numberEdit = li.children[2];
 
-    
-      if(!nameValidation || !numberValidation){
-        
       nameEdit.addEventListener('input', e =>{
       nameValidation = NAME_REGEX.test(nameEdit.innerHTML);
       validateInput(nameEdit, nameValidation);
@@ -141,7 +138,8 @@ list.addEventListener('click', e => {
       validateInput(numberEdit, numberValidation);
       });
       
-
+      
+      if(!nameValidation || !numberValidation){
         return;
       }
     
