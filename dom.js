@@ -126,7 +126,10 @@ list.addEventListener('click', e => {
     const li = editBtn.parentElement;
     const nameEdit = li.children[1];
     const numberEdit = li.children[2];
-      
+
+    
+      if(!nameValidation || !numberValidation){
+        
       nameEdit.addEventListener('input', e =>{
       nameValidation = NAME_REGEX.test(nameEdit.innerHTML);
       validateInput(nameEdit, nameValidation);
@@ -139,11 +142,11 @@ list.addEventListener('click', e => {
       });
       
 
+        return;
+      }
+    
       if (li.classList.contains('editando')) {
 
-      if(!nameValidation || !numberValidation){
-        return
-      }
 
       li.classList.remove('editando');
       nameEdit.removeAttribute('contenteditable');
