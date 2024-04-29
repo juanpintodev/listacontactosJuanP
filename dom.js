@@ -10,8 +10,6 @@ const list = document.querySelector('#list');
 // Validations
 let nameValidation = false;
 let numberValidation = false;
-let nameValidation2 = true;
-let numberValidation2 = true;
 
 // Functions
 const validateInput = (input, validation) => {
@@ -126,6 +124,9 @@ list.addEventListener('click', e => {
     const li = editBtn.parentElement;
     const nameEdit = li.children[1];
     const numberEdit = li.children[2];
+    
+    let nameValidation2 = true;
+    let numberValidation2 = true;
 
       nameEdit.addEventListener('input', e =>{
       nameValidation2 = NAME_REGEX.test(nameEdit.innerHTML);
