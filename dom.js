@@ -139,7 +139,7 @@ list.addEventListener('click', e => {
 
       if (li.classList.contains('editando')) {
 
-      if(!nameValidation && !numberValidation){
+      if(!nameValidation || !numberValidation){
         return
       }
 
@@ -176,6 +176,8 @@ list.addEventListener('click', e => {
       </svg>
       `;
     }
+    nameValidation = false;
+    numberValidation = false;
   }
 });
 
