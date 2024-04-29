@@ -128,13 +128,13 @@ list.addEventListener('click', e => {
     const numberEdit = li.children[2];
 
       nameEdit.addEventListener('input', e =>{
-      nameValidation = NAME_REGEX.test(nameEdit.innerHTML);
+      nameValidation2 = NAME_REGEX.test(nameEdit.innerHTML);
       validateInput(nameEdit, nameValidation2);
       });
       
       
       numberEdit.addEventListener('input', e =>{ 
-      numberValidation = NUMBER_REGEX.test(numberEdit.innerHTML);
+      numberValidation2 = NUMBER_REGEX.test(numberEdit.innerHTML);
       validateInput(numberEdit, numberValidation2);
       });
       
