@@ -138,14 +138,12 @@ list.addEventListener('click', e => {
       validateInput(numberEdit, numberValidation);
       });
       
-      
+      if (li.classList.contains('editando')) {
+
       if(!nameValidation || !numberValidation){
         return;
       }
-    
-      if (li.classList.contains('editando')) {
-
-
+        
       li.classList.remove('editando');
       nameEdit.removeAttribute('contenteditable');
       numberEdit.removeAttribute('contenteditable');  
