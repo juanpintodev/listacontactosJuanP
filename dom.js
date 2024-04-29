@@ -10,6 +10,8 @@ const list = document.querySelector('#list');
 // Validations
 let nameValidation = false;
 let numberValidation = false;
+let nameValidation2 = true;
+let numberValidation2 = true;
 
 // Functions
 const validateInput = (input, validation) => {
@@ -32,8 +34,6 @@ const validateInput = (input, validation) => {
 
   if (nameValidation && numberValidation) {
     formBtn.disabled = false;
-    nameValidation = false;
-    numberValidation = false;
   } else {
     formBtn.disabled = true;
   }
@@ -129,18 +129,18 @@ list.addEventListener('click', e => {
 
       nameEdit.addEventListener('input', e =>{
       nameValidation = NAME_REGEX.test(nameEdit.innerHTML);
-      validateInput(nameEdit, nameValidation);
+      validateInput(nameEdit, nameValidation2);
       });
       
       
       numberEdit.addEventListener('input', e =>{ 
       numberValidation = NUMBER_REGEX.test(numberEdit.innerHTML);
-      validateInput(numberEdit, numberValidation);
+      validateInput(numberEdit, numberValidation2);
       });
       
       if (li.classList.contains('editando')) {
 
-      if(!nameValidation || !numberValidation){
+      if(!nameValidation2 || !numberValidation2){
         return;
       }
         
@@ -177,8 +177,8 @@ list.addEventListener('click', e => {
       </svg>
       `;
     }
-    nameValidation = false;
-    numberValidation = false;
+    nameValidation2 = false;
+    numberValidation2 = false;
   }
 });
 
