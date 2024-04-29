@@ -32,6 +32,8 @@ const validateInput = (input, validation) => {
 
   if (nameValidation && numberValidation) {
     formBtn.disabled = false;
+    nameValidation = false;
+    numberValidation = false;
   } else {
     formBtn.disabled = true;
   }
