@@ -142,7 +142,7 @@ list.addEventListener('click', e => {
       if (li.classList.contains('editando')) {
 
       if(!nameValidation || !numberValidation){
-        return;
+        return
       }
 
       li.classList.remove('editando');
