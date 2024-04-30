@@ -179,6 +179,8 @@ list.addEventListener('click', e => {
       `;
     }
   }
+  nameValidation = false;
+  numberValidation = false;
 });
 
 (() => {
