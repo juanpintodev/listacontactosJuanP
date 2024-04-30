@@ -11,6 +11,7 @@ const list = document.querySelector('#list');
 let nameValidation = false;
 let numberValidation = false;
 
+
 // Functions
 const validateInput = (input, validation) => {
   
@@ -124,11 +125,10 @@ list.addEventListener('click', e => {
     const li = editBtn.parentElement;
     const nameEdit = li.children[1];
     const numberEdit = li.children[2];
-    
-    let nameValidation2 = true;
-    let numberValidation2 = true;
+    let nameValidation2 = NAME_REGEX.test(nameEdit.innerHTML);
+    let numberValidation2 = NUMBER_REGEX.test(numberEdit.innerHTML);
 
-      nameEdit.addEventListener('input', e =>{
+    nameEdit.addEventListener('input', e =>{
       nameValidation2 = NAME_REGEX.test(nameEdit.innerHTML);
       validateInput(nameEdit, nameValidation2);
       });
@@ -140,11 +140,11 @@ list.addEventListener('click', e => {
       });
       
       if (li.classList.contains('editando')) {
-
       if(!nameValidation2 || !numberValidation2){
+        console.log(2);
         return;
       }
-        
+
       li.classList.remove('editando');
       nameEdit.removeAttribute('contenteditable');
       numberEdit.removeAttribute('contenteditable');  
@@ -178,8 +178,6 @@ list.addEventListener('click', e => {
       </svg>
       `;
     }
-    nameValidation2 = false;
-    numberValidation2 = false;
   }
 });
 
